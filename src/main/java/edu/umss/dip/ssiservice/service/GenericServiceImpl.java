@@ -8,6 +8,7 @@ import edu.umss.dip.ssiservice.dto.DtoBase;
 import edu.umss.dip.ssiservice.exception.NotFoundException;
 import edu.umss.dip.ssiservice.model.ModelBase;
 import edu.umss.dip.ssiservice.repositories.GenericRepository;
+import edu.umss.dip.ssiservice.repositories.GenericSpRepository;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -102,5 +103,5 @@ public abstract class GenericServiceImpl<T extends ModelBase> implements Generic
         }
     }
 
-    protected abstract GenericRepository<T> getRepository();
+    protected abstract GenericSpRepository<T> getRepository();
 }

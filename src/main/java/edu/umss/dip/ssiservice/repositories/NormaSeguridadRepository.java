@@ -5,6 +5,8 @@
 package edu.umss.dip.ssiservice.repositories;
 
 import edu.umss.dip.ssiservice.model.NormaSeguridad;
+import org.springframework.stereotype.Repository;
 
-public interface NormaSeguridadRepository extends GenericRepository<NormaSeguridad> {
+@Repository
+public interface NormaSeguridadRepository extends GenericSpRepository<NormaSeguridad> {
 }
