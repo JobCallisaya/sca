@@ -8,5 +8,5 @@ import edu.umss.dip.ssiservice.model.Proyecto;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface ProyectoRepository extends GenericSpRepository<Proyecto> {
+public interface ProyectoRepository extends GenericRepository<Proyecto> {
 }

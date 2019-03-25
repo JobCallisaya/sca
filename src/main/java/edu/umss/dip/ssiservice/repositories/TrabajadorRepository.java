@@ -8,5 +8,5 @@ import edu.umss.dip.ssiservice.model.Trabajador;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface TrabajadorRepository extends GenericSpRepository<Trabajador> {
+public interface TrabajadorRepository extends GenericRepository<Trabajador> {
 }

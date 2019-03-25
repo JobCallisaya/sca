@@ -1,11 +1,10 @@
 /**
- * @author: Edson A. Terceros T.
+ * @author: Job Callisaya
  */
 
 package edu.umss.dip.ssiservice.repositories;
 
 import edu.umss.dip.ssiservice.model.Accidente;
-import org.springframework.stereotype.Repository;
 
-public interface AccidenteRepository extends GenericSpRepository<Accidente> {
+public interface AccidenteRepository extends GenericRepository<Accidente> {
 }

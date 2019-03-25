@@ -11,8 +11,5 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @Configuration
 @EnableJpaAuditing
-@EnableJpaRepositories(basePackages = {"edu.umss.dip.ssiservice.repositories"},
-        repositoryBaseClass = GenericSpRepositoryImpl.class
-)
 public class PersistenceConfig {
 }

@@ -8,5 +8,5 @@ import edu.umss.dip.ssiservice.model.Actividad;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface ActividadRepository extends GenericSpRepository<Actividad> {
+public interface ActividadRepository extends GenericRepository<Actividad> {
 }
