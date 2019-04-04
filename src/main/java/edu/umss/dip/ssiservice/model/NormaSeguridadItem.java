@@ -14,7 +14,7 @@ public class NormaSeguridadItem extends ModelBase<NormaSeguridadItemDto> {
 
     private String nombre;
 
-    @OneToOne(optional = false)
+    @ManyToOne(optional = false)
     private NormaSeguridad normaSeguridad;
 
     public String getNombre() {

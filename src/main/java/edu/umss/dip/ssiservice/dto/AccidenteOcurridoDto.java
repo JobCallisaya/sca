@@ -3,7 +3,7 @@ package edu.umss.dip.ssiservice.dto;
 import edu.umss.dip.ssiservice.model.Accidente;
 import org.modelmapper.ModelMapper;
 
-public class AccidenteDto extends DtoBase<Accidente> {
+public class AccidenteOcurridoDto extends DtoBase<Accidente> {
     private String nombre;
     private String descripcion;
     private String tipo;
@@ -41,7 +41,7 @@ public class AccidenteDto extends DtoBase<Accidente> {
     }
 
     @Override
-    public AccidenteDto toDto(Accidente accidente, ModelMapper mapper) throws InstantiationException, IllegalAccessException {
+    public AccidenteOcurridoDto toDto(Accidente accidente, ModelMapper mapper) throws InstantiationException, IllegalAccessException {
         super.toDto(accidente, mapper);
         this.setTipo(accidente.getTipo().name());
         this.setSeveridad(accidente.getSeveridad().name());

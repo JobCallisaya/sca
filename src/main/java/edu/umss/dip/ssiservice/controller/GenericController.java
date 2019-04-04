@@ -123,8 +123,15 @@ public abstract class GenericController<E extends ModelBase, D extends DtoBase<E
         return (Class<E>) superClass.getActualTypeArguments()[0];
     }
 
-    protected D toDto(E entity) {
-        return (D) getInstanceOfD().toDto(entity, modelMapper);
+    protected D toDto(E entity){
+        try {
+            return (D) getInstanceOfD().toDto(entity, modelMapper);
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     protected E toModel(D dto) {

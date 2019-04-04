@@ -25,7 +25,7 @@ public class ActividadDto extends DtoBase<Actividad> {
     }
 
     @Override
-    public ActividadDto toDto(Actividad actividad, ModelMapper mapper) {
+    public ActividadDto toDto(Actividad actividad, ModelMapper mapper) throws InstantiationException, IllegalAccessException {
         super.toDto(actividad, mapper);
         this.setNormaSeguridadId(
                 actividad.getNormaSeguridad() != null

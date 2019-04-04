@@ -28,7 +28,7 @@ public class DtoBase<E extends ModelBase> {
         // Do nothing
     }
 
-    public DtoBase toDto(E element, ModelMapper mapper) {
+    public DtoBase toDto(E element, ModelMapper mapper) throws IllegalAccessException, InstantiationException {
         beforeConversion(element, mapper);
         if (element != null) {
             mapper.map(element, this);

@@ -15,7 +15,7 @@ public class TrabajadorDto extends DtoBase<Trabajador> {
     }
 
     @Override
-    public TrabajadorDto toDto(Trabajador trabajador, ModelMapper mapper) {
+    public TrabajadorDto toDto(Trabajador trabajador, ModelMapper mapper) throws InstantiationException, IllegalAccessException {
         super.toDto(trabajador, mapper);
         return this;
     }

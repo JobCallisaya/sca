@@ -11,22 +11,22 @@ import javax.persistence.Entity;
 @Entity
 public class Trabajador extends ModelBase<TrabajadorDto> {
 
-    private String nombres;
-    private String apellidos;
+    private String nombre;
+    private String apellido;
 
-    public String getNombres() {
-        return nombres;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setNombres(String nombres) {
-        this.nombres = nombres;
+    public void setNombre(String nombres) {
+        this.nombre = nombres;
     }
 
-    public String getApellidos() {
-        return apellidos;
+    public String getApellido() {
+        return apellido;
     }
 
-    public void setApellidos(String apellidos) {
-        this.apellidos = apellidos;
+    public void setApellido(String apellidos) {
+        this.apellido = apellidos;
     }
 }

@@ -16,7 +16,7 @@ public class NormaSeguridadItemDto extends DtoBase<NormaSeguridadItem> {
     }
 
     @Override
-    public NormaSeguridadItemDto toDto(NormaSeguridadItem normaSeguridadItem, ModelMapper mapper) {
+    public NormaSeguridadItemDto toDto(NormaSeguridadItem normaSeguridadItem, ModelMapper mapper) throws InstantiationException, IllegalAccessException {
         super.toDto(normaSeguridadItem, mapper);
         return this;
     }
